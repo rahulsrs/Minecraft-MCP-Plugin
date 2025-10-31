@@ -38,6 +38,7 @@ public final class AiChat extends JavaPlugin {
         return instance;
     }
 
+
 }
 
 
