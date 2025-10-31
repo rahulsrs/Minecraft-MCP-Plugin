@@ -2,3 +2,19 @@ name: AiChat
 version: '${version}'
 main: io.github.rahulsrs.aichat.AiChat
 api-version: '1.21'
+commands:
+  ai:
+    description: Asks AI the string followed by the command.
+    usage: /<command> <your question here>
+    permission: ai.ask
+    permission-message: You do not have permission to ask the AI a question.
+permissions:
+  ai.ask:
+    description: Allows Player to ask AI text based questions and the AI can invoke tools
+    default: op
+    children:
+      ai.ask.basic : true
+
+  ai.ask.basic:
+    description: Allows Player to ask AI text based questions without the AI invoking tools
+    default: true
