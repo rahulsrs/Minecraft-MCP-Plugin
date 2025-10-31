@@ -24,15 +24,15 @@ public final class AiChat extends JavaPlugin {
         getLogger().info("Disabled Plugin");
     }
 
-    public class ChatListener implements Listener {
-//        ConsoleCommandSender console = Bukkit.getConsoleSender();
-        @EventHandler
-        public void onPlayerChat(AsyncPlayerChatEvent e){
-            String msg = e.getMessage();
-            getLogger().info("skibidi");
-            getLogger().info(msg);
-        }
-    }
+//    public class ChatListener implements Listener {
+////        ConsoleCommandSender console = Bukkit.getConsoleSender();
+//        @EventHandler
+//        public void onPlayerChat(AsyncPlayerChatEvent e){
+//            String msg = e.getMessage();
+//            getLogger().info("skibidi");
+//            getLogger().info(msg);
+//        }
+//    }
 
     public static AiChat getInstance() {
         return instance;
