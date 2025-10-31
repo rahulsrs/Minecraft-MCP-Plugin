@@ -10,6 +10,8 @@ import org.bukkit.plugin.java.JavaPlugin;
 
 public final class AiChat extends JavaPlugin {
 
+    private static AiChat instance;
+
     @Override
     public void onEnable() {
         // Plugin startup logic
@@ -32,6 +34,9 @@ public final class AiChat extends JavaPlugin {
         }
     }
 
+    public static AiChat getInstance() {
+        return instance;
+    }
 
 }
 
