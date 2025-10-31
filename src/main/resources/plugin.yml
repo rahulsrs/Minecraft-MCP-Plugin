@@ -1,0 +1,4 @@
+name: AiChat
+version: '${version}'
+main: io.github.rahulsrs.aichat.AiChat
+api-version: '1.21'
