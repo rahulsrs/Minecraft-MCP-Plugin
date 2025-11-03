@@ -42,9 +42,9 @@ public class ChatListener implements Listener {
             String json = String.format("{\"player\":\"%s\", \"message\":\"%s\"}", playerName, message);
 
             HttpRequest request = HttpRequest.newBuilder()
-                    .uri(URI.create("http://localhost:5000/chat")) // Your MCP endpoint
+                    .uri(URI.create("https://dummyjson.com/test")) // Your MCP endpoint
                     .header("Content-Type", "application/json")
-                    .POST(HttpRequest.BodyPublishers.ofString(json, StandardCharsets.UTF_8))
+                    .GET()
                     .build();
 
             return httpClient.sendAsync(request, HttpResponse.BodyHandlers.ofString())

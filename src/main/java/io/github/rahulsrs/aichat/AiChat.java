@@ -15,8 +15,10 @@ public final class AiChat extends JavaPlugin {
     @Override
     public void onEnable() {
         // Plugin startup logic
+        instance = this;
         getLogger().info("AI Chat Plugin has been enabled.");
         getServer().getPluginManager().registerEvents(new ChatListener(), this);
+        Locations locations = new Locations();
     }
 
     @Override
