@@ -8,9 +8,10 @@ public class Locations {
     String serverDirectory = "";
     public Locations(){
        File server = Bukkit.getWorldContainer();
-       String pathToServer = server.getAbsolutePath();
+       serverDirectory = server.getAbsolutePath();
        AiChat instance = AiChat.getInstance();
-       instance.getLogger().info("Got Server Location, It's at " + pathToServer);
+       instance.getLogger().info("Got Server Location, It's at " + serverDirectory);
     }
+
 
 }
